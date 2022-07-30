@@ -3,9 +3,9 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['6282239202895'],
-  ['6282239202895'],
-  ['6281549224541', 'BG', true]
+  ['6285896677508'],
+  ['6285896677508'],
+  ['62887437035456', 'BG', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -30,8 +30,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'wa.me/6282239202895'
-global.author = 'Kimhci Bot'
+global.packname = 'wa.me/6285896677508'
+global.author = 'Damar Bot'
 
 global.multiplier = 69 // The higher, The harder levelup
 
@@ -52,30 +52,4 @@ global.rpg = {
       legendary: '🗃️',
       pet: '🎁',
       trash: '🗑',
-      armor: '🥼',
-      sword: '⚔️',
-      wood: '🪵',
-      rock: '🪨',
-      string: '🕸️',
-      horse: '🐎',
-      cat: '🐈',
-      dog: '🐕',
-      fox: '🦊',
-      petFood: '🍖',
-      iron: '⛓️',
-      gold: '👑',
-      emerald: '💚'
-    }
-    let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
-    if (!results.length) return ''
-    else return emot[results[0][0]]
-  }
-}
-
-
-let file = fileURLToPath(import.meta.url)
-watchFile(file, () => {
-  unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
-})
+      armo
